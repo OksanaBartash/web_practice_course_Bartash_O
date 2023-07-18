@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Practise_lesson_1.1</title>.
+</head>
+
+<body>
+	<!-- Контент веб-сторінки -->
+
+	<h1>Моя веб-сторінка!</h1>
+	<p>Це приклад абзацу тексту.</p>
+	<ul>
+		<li>Пункт 1</li>
+		<li>Пункт 2</li>
+		<li>Пункт 3</li>
+	</ul>
+	<p>Це <a href="https://meteo.ua/71/vinnitsa">посилання</a> на інший веб-сайт.</p>
+	<img src="img/image.jpg" alt="Приклад зображення">
+	<ol>Cписок нумерований
+		<li>Місце для інформації</li>
+		<li>Місце для інформації</li>
+		<li>Місце для інформації</li>
+		<li>Місце для інформації</li>
+	</ol>
+
+	<table>
+		<tr>
+			<th>User №</th>
+			<th>Name</th>
+			<th>Age</th>
+		</tr>
+		<tr>
+			<th>1</th>
+			<th>Kirill</th>
+			<th>18</th>
+		</tr>
+		<tr>
+			<th>2</th>
+			<th>Nataly</th>
+			<th>28</th>
+		</tr>
+		<tr>
+			<th>3</th>
+			<th>Lena</th>
+			<th>22</th>
+		</tr>
+	</table>
+	<br><br>
+	<form action="/action_page.php" method="get" target="_blank">
+		<label for="fname">First name:</label>
+		<input type="text" id="fname" name="fname"><br><br>
+		<label for="lname">Last name:</label>
+		<input type="text" id="lname" name="lname"><br><br>
+		<input type="submit" value="Submit">
+		<button type="submit" formmethod="post">Send</button> <br><br>
+		<label for="infouser">Info User:</label>
+		<textarea id="infouser" name="infouser" rows="4" cols="50"></textarea> <br><br>
+
+		<select>
+			<option>Пункт 1</option>
+			<option>Пункт 2</option>
+			<option>Пункт 3</option>
+			<option>Пункт 4</option>
+		</select><br><br><br><br>
+	</form>
+
+	<p id="text"></p>
+	<form>
+		<select name="type" size="4" required>
+			<option value="Програміст">Програміст</option>
+			<option value="Системний аміністратор">Системний аміністратор</option>
+			<option value="Маркетолог">Маркетолог</option>
+			<option value="Дизайнер ">Дизайнер </option>
+		</select>
+		<input type="button" value="Обрати" onclick="dataSelect(this.form)">
+	</form>
+	<script>
+		text.innerHTML = "Вибрана професія: ";
+		function dataSelect(f) {
+			n = f.type.selectedIndex;
+			text.innerHTML = "Вибрана професія: " + f.type.options[n].value;
+		}
+	</script>
+
+</body>
+
+</html>
