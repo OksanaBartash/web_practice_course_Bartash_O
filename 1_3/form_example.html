@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Приклад веб-сторінки з формою</title>
+</head>
+
+<body>
+	<h1>Registration form for users</h1>
+
+	<form action="#" method="post">
+		<label for="fname">User name</label>
+		<input type="text" id="fname" name="username" required>
+		<br><br><br>
+
+		<label for="lname">Surname</label>
+		<input type="text" id="lname" name="usersurname" required>
+		<br><br><br>
+
+		<label for="password">Password</label>
+		<input type="password" id="password" name="userpassword" required>
+		<br><br><br>
+
+		<label for="email">Email</label>
+		<input type="email" id="email" name="useremail" required>
+		<br><br><br>
+
+		<label for="phone">Telephone</label>
+		<input type="tel" id="phone" name="userphone" required>
+		<br><br><br>
+
+		<label for="newsletter">
+			<input type="checkbox" id="newsletter" name="usernewsletter">
+			Subscribe to the newsletter
+		</label>
+		<br><br><br>
+
+		<p>Options for obtaining newsletter: </p>
+		<label for="optionsobtaining">
+			<input type="radio" id="optionsobtaining" name="useroptionsobtaining">
+			from email
+		</label><br><br>
+
+		<label for="optionsobtaining">
+			<input type="radio" id="optionsobtaining" name="useroptionsobtaining">
+			from magazines
+		</label><br><br>
+
+		<label for="optionsobtaining">
+			<input type="radio" id="optionsobtaining" name="useroptionsobtaining">
+			from phone
+		</label>
+		<br><br><br>
+
+		<input type="submit" value="registration">
+	</form>
+</body>
+
+</html>
