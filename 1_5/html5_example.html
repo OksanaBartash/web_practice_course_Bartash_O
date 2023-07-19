@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Optional custom CSS -->
+	<style>
+		figure {
+			border: thin #c0c0c0 solid;
+			display: flex;
+			flex-flow: column;
+			padding: 5px;
+			max-width: 520px;
+			margin: auto 20px;
+		}
+
+		img {
+			max-width: 520px;
+			max-height: 450px;
+		}
+
+		figcaption {
+			background-color: #222;
+			color: #fff;
+			font: italic smaller sans-serif;
+			font-size: 18px;
+			padding: 3px;
+			text-align: center;
+		}
+	</style>
+
+	<title>HTML5 приклад</title>
+</head>
+
+<body>
+	<header>
+		<h1>HTML5 example about pets</h1>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="https://en.wikipedia.org/wiki/Cat" target="_blank">Part_1</a> </li>
+			<li><a href="https://en.wikipedia.org/wiki/Dog" target="_blank">Part_2</a> </li>
+		</ul>
+	</nav>
+	<br><br><br>
+
+	<main>
+		<section id="section1">
+			<h2>Part_1__About_cats</h2>
+			<p> Cats are adorable pets that are loved by many people around the world. They are known for their playful and
+				curious nature, making them entertaining companions. These furry creatures are often independent but can
+				also form strong bonds with their human owners. Cat owners enjoy spending time cuddling and interacting with
+				their feline friends. Overall, cats bring joy and comfort to households, making them cherished members of
+				many families.</p>
+			<figure>
+				<img src="img/cat.jpg" alt="Foto with a cat">
+				<figcaption>Foto with a cat</figcaption>
+			</figure>
+		</section>
+		<br><br><br>
+
+		<section id="section2">
+			<h2>Part_2__About_doogs</h2>
+			<p>Dogs are wonderful animals that are beloved by people all over the world. They are known for their loyalty
+				and devotion to their human companions. These furry friends are not only great companions but also excellent
+				protectors of their families. Dogs love to play and be active, making them perfect partners for outdoor
+				adventures. Many people find comfort and happiness in the company of their loyal and affectionate canine
+				companions.</p>
+			<video controls>
+				<source src="URL_example_video" type="video/mp4">
+				Your browser doesn't support the video tag.
+			</video>
+
+			<h3>Video about dogs using tag &lt;iframe&gt; - from YouTube example:</h3>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/CaWZEfx34Cg" frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen></iframe>
+		</section>
+		<br><br><br>
+
+		<section id="contact">
+			<h2>Contact form</h2>
+			<form>
+				<label for="name">Name</label>
+				<input type="text" id="name" name="name" required> <br><br>
+
+				<label for=email">Email:</label>
+				<input type="email" id="email" name="email" required> <br><br>
+
+				<label for="nickname">Animal nickname</label>
+				<input type="text" id="nickname" name="nickname" required> <br><br>
+
+				<label for="birthdate">Date of birth our pets</label>
+				<input type="date" id="birthdate" name="birthdate"> <br><br>
+
+				<label for="message">Message about problem or wishes:</label>
+				<textarea id="message" name="message" required></textarea> <br><br>
+
+				<button type="submit">Send</button>
+			</form>
+		</section>
+		<br><br><br>
+
+		<section id="multimedia">
+			<h2>Multimedia</h2><br>
+
+			<h3>Audio - you can turn on and listen</h3>
+			<audio controls>
+				<source src="audio.mp3" type="audio/mpeg">
+				Your browser doesn't support audio.
+			</audio><br><br>
+
+			<h3>Canvas</h3>
+			<canvas id="exampleCanvas" width="300" height="200">
+				Your browser doesn't support canvas. Update your browser or use a different one.
+			</canvas>
+		</section>
+	</main>
+
+	<footer>
+		<p>Rights reserved &copy; 2023</p>
+	</footer>
+</body>
+
+</html>
