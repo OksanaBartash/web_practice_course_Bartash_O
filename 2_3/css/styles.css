@@ -1,0 +1,33 @@
+body {
+	font-family: 'Times New Roman', Times, serif, Arial, sans-serif;
+	margin: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Georgia', serif;
+	background: aliceblue;
+}
+
+p {
+	background: rgb(236, 252, 214);
+}
+
+.fancy-text {
+	font-size: 1.5em;
+	line-height: 1.6;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.shadow {
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+	background: none;
+	font-size: 1.5em;
+}
