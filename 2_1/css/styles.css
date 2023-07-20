@@ -1,0 +1,58 @@
+* {}
+
+body {
+
+	font-family: italic smaller sans-serif;
+	background-color: rgb(206, 250, 204);
+	margin: 20px;
+
+}
+
+h1 {
+	color: darkblue;
+}
+
+p {
+	font-size: 18px;
+	color: darkgreen;
+}
+
+nav {
+	background-color: lightblue;
+	padding: 15px;
+	text-align: left;
+}
+
+nav a {
+	color: darkred;
+	text-decoration: none;
+	margin: 0 10px;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+
+figure {
+	border: thin grey solid;
+	display: flex;
+	flex-flow: column;
+	padding: 5px;
+	max-width: 290px;
+	margin: auto 20px;
+}
+
+img {
+	max-width: 290px;
+	max-height: 420px;
+}
+
+figcaption {
+	background-color: #222;
+	color: #fff;
+	font: italic smaller sans-serif;
+	font-size: 18px;
+	padding: 3px;
+	text-align: center;
+}
