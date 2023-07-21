@@ -6,14 +6,20 @@ body {
 
 header {
 	background-color: #55a255;
-	padding: 1rem;
 	text-align: center;
+	width: 100%;
+	overflow: hidden;
 }
 
 header h1 {
 	color: #f8bde1;
 	margin: 1.75rem 0;
-	height: 2.5rem;
+
+}
+
+header img {
+	height: 200px;
+	width: 100%;
 }
 
 section {
@@ -23,9 +29,52 @@ section {
 
 p {
 	margin: 2rem;
+	padding: 0.25em;
 	font-size: 1.25rem;
 	line-height: 2.5rem;
+	background-color: white;
+	/*background-color:  rgb(214, 252, 211);*/
+}
+
+section h2 {
+	text-align: center;
+	color: #0e6612;
+	text-transform: uppercase;
+	font-size: 2em;
+}
+
+body:nth-child(2) {
+	height: 100%;
 	background-color: rgb(248, 251, 207);
+}
+
+body section:nth-last-child(3) {
+	display: inline-block;
+	min-width: -webkit-fill-available;
+	background-color: rgb(214, 252, 211);
+}
+
+nav {
+	display: flex;
+}
+
+section nav a {
+	font-size: 18px;
+	font-weight: 600;
+	margin: 50px auto;
+}
+
+section img {
+	width: 46%;
+	height: 40rem;
+	margin: 0 1.5%;
+	background-color: rgba(130, 126, 126, 0.484);
+}
+
+
+
+section img:last-child {
+	float: right;
 }
 
 footer {
@@ -41,16 +90,43 @@ footer p {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 	header h1 {
-
 		font-size: 1.5rem;
+	}
+
+	header img {
+		height: 100px;
+		width: 100%;
 	}
 
 	p {
 		margin: 0.5rem;
 		font-size: 1.4rem;
 		line-height: 2rem;
+	}
+
+	section h2 {
+		font-size: 1.5rem;
+		margin: 0;
+		margin-bottom: 1.5rem;
+	}
+
+	section nav a {
+		font-weight: 400;
+		margin: 10px auto;
+	}
+
+	nav {
+		display: grid;
+		justify-content: center;
+	}
+
+	section img {
+		width: 100%;
+		height: 100%;
+		margin: 0 0.5% 1% 0.5%;
+
 	}
 
 	footer p {
@@ -60,7 +136,7 @@ footer p {
 }
 
 
-@media (min-width: 601px) {
+@media (min-width: 769px) {
 	header h1 {
 		font-size: 2.5rem;
 	}
