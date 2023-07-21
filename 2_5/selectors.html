@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Селектори та специфічність CSS</title>
+
+	<style>
+		.main-heading {
+			font-size: 2rem;
+			color: rgb(43, 143, 143);
+			text-decoration: overline;
+			text-align: center;
+			text-transform: uppercase;
+		}
+
+		#example {
+			text-decoration: underline;
+			text-align: center;
+
+		}
+
+		span[high] {
+			background-color: rgb(132, 246, 114);
+			font-variant: all-small-caps;
+			display: block;
+			text-align: center;
+		}
+
+		section>h2 {
+			color: rgb(225, 78, 41);
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1 class="main-heading">Selectors and CSS specificity</h1>
+	</header>
+
+	<main>
+		<section>
+			<h2 id="example">Examples</h2>
+			<p
+				style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 2rem; text-align: justify;">
+				&nbsp;Lorem ipsum dolor sit amet
+				consectetur adipisicing
+				elit. Tenetur dolore aperiam voluptatum repudiandae porro deserunt sed adipisci officiis esse quia
+				reprehenderit debitis, quibusdam totam nobis iure culpa commodi magnam quaerat.<br>
+				<span high="light">
+					***Text selected with CSS attribute***</span>
+			</p>
+		</section>
+	</main>
+
+</body>
+
+</html>
