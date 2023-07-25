@@ -1,0 +1,91 @@
+@mixin tlt ($f, $c, $b) {
+	font-weight: $f;
+	color: $c;
+	background-color: $b;
+}
+
+%text_p {
+	font-size: 28px;
+	font-weight: 500;
+	color: rgb(98, 90, 80);
+	border-top-style: inset;
+	text-align: center;
+}
+
+ul {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	padding: 0;
+}
+
+.btn:not(:disabled):not(.disabled) {
+	margin: 20px 30px;
+	background-color: rgb(51, 122, 20);
+	border-color: rgb(2, 95, 28);
+}
+
+body {
+	background-color: rgba(255, 230, 106, 0.164);
+
+	.container {
+		padding: 25px 0;
+	}
+}
+
+header>h1 {
+	background-color: rgb(253, 241, 183);
+	color: rgb(10, 232, 158);
+	font-weight: 800;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+li {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+h2 {
+	@include tlt (500, green, rgb(215, 236, 130));
+	text-align: center;
+}
+
+p {
+	@extend %text_p;
+}
+
+
+figure {
+	display: flex;
+	flex-flow: column;
+	padding: 5px;
+	max-width: 520px;
+	margin-inline: 0;
+
+}
+
+img {
+	max-width: 520px;
+	height: 340px;
+	text-align: center;
+}
+
+figcaption {
+	background-color: #222;
+	color: #fff;
+	font: italic smaller sans-serif;
+	font-size: 18px;
+	padding: 3px;
+	text-align: center;
+	margin-right: 20px;
+}
+
+footer {
+	p {
+		background-color: rgb(215, 236, 130);
+		color: green;
+		margin-top: 5px;
+		border-top: 0;
+	}
+}
