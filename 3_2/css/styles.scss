@@ -72,13 +72,14 @@ img {
 }
 
 figcaption {
+	max-width: 520px;
 	background-color: #222;
 	color: #fff;
 	font: italic smaller sans-serif;
 	font-size: 18px;
-	padding: 3px;
+	padding: 5px;
 	text-align: center;
-	margin-right: 20px;
+
 }
 
 footer {
@@ -87,5 +88,11 @@ footer {
 		color: green;
 		margin-top: 5px;
 		border-top: 0;
+	}
+}
+
+@media (max-width: 767px) {
+	iframe {
+		margin-bottom: 30px;
 	}
 }
