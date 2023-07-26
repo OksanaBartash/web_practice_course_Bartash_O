@@ -12,8 +12,8 @@ ul {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 0;
 }
 
@@ -26,11 +26,12 @@ ul {
 body {
   background-color: rgba(255, 230, 106, 0.164);
 }
+
 body .container {
   padding: 25px 0;
 }
 
-header > h1 {
+header>h1 {
   background-color: rgb(253, 241, 183);
   color: rgb(10, 232, 158);
   font-weight: 800;
@@ -56,8 +57,8 @@ figure {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
   padding: 5px;
   max-width: 520px;
   margin-inline: 0;
@@ -76,7 +77,7 @@ figcaption {
   font-size: 18px;
   padding: 3px;
   text-align: center;
-  margin-right: 20px;
+  margin-right: 35px;
 }
 
 footer p {
