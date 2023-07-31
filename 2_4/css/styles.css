@@ -24,6 +24,7 @@ header img {
 
 section {
 	padding: 1rem;
+	overflow: hidden;
 
 }
 
