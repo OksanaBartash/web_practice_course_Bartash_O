@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Flexbox Example__3_3</title>
+
+	<style>
+		body {
+			background-color: rgb(152, 153, 155);
+			overflow: hidden;
+			overflow-y: scroll;
+		}
+
+		.container {
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: calc(5px + (20 - 5) * ((100vw - 320px) / (1920 - 320)));
+			max-width: 100%;
+			flex: 1 1 auto;
+		}
+
+		div h1 {
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			font-size: calc(30px + (60 - 30) * ((100vw - 320px) / (1920 - 320)));
+			color: rgb(255, 208, 0);
+			margin: 0 auto;
+		}
+
+		figcaption {
+			color: rgb(30, 96, 11);
+			max-width: calc(220px + (520 - 220) * ((100vw - 320px) / (1920 - 320)));
+			font: italic smaller sans-serif;
+			font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1920 - 320)));
+			font-weight: 800;
+			margin-bottom: -1px;
+			padding: 15px;
+			text-align: center;
+			background-color: rgb(252, 255, 47);
+
+		}
+
+		figure {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-flow: column;
+			flex-flow: column;
+			padding: 5px;
+			max-width: calc(220px + (520 - 220) * ((100vw - 320px) / (2560 - 320)));
+			margin-inline: 0;
+		}
+
+		.image-main {
+			justify-content: center;
+			align-items: center;
+			width: calc(220px + (700 - 220) * ((100vw - 320px) / (1920 - 320)));
+			height: calc(200px + (500 - 200) * ((100vw - 320px) / (1920 - 320)));
+			border: calc(20px + (50 - 20) * ((100vw - 320px) / (1920 - 320))) solid greenyellow;
+		}
+
+		.image {
+			max-width: calc(220px + (520 - 220) * ((100vw - 768px) / (1920 - 320)));
+			height: calc(150px + (340 - 150) * ((100vw - 320px) / (2560 - 320)));
+			text-align: center;
+			border-left: calc(20px + (50 - 20) * ((100vw - 320px) / (1920 - 320))) solid rgb(252, 255, 47);
+			border-right: calc(20px + (50 - 20) * ((100vw - 320px) / (1920 - 320))) solid rgb(252, 255, 47);
+			border-bottom: calc(20px + (50 - 20) * ((100vw - 320px) / (1920 - 320))) solid rgb(252, 255, 47);
+		}
+
+		.item_main {
+			order: 3;
+			margin-left: -120px;
+		}
+
+		.item_1,
+		.item_2,
+		.item_3,
+		.item_4 {
+			display: flex;
+		}
+
+
+		.item_1 {
+			order: 1;
+			z-index: 1;
+			margin-top: -480px;
+		}
+
+		.item_2 {
+			order: 2;
+			margin-top: 480px;
+			margin-left: calc(-220px + (-530 + 220) * ((100vw - 320px) / (2560 - 320)));
+			z-index: 1;
+		}
+
+		.item_3 {
+			order: 4;
+			z-index: 1;
+			margin-left: calc(-140px + (-135 + 70) * ((100vw - 320px) / (2560 - 320)));
+			margin-top: -480px;
+		}
+
+		.item_4 {
+			order: 5;
+			margin-top: 480px;
+			margin-left: calc(-220px + (-530 + 220) * ((100vw - 320px) / (2560 - 320)));
+			z-index: 1;
+		}
+
+
+
+		@media (max-width: 767px) {
+			.container {
+				flex-wrap: wrap;
+				display: flex;
+			}
+
+			.item_main,
+			.item_1,
+			.item_2,
+			.item_3,
+			.item_4 {
+				display: flex;
+				margin: 10px;
+			}
+
+			.image-main,
+			.image {
+				max-width: 100%;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div>
+		<h1>Children's emotions</h1>
+	</div>
+	<div class="container">
+		<div class="item_main">
+			<img class="image-main" src="img/laughter.jpg" alt="Children's emotions">
+		</div>
+
+		<figure class="item_1">
+			<figcaption>Children's fear</figcaption>
+			<img class="image" src="img/fear.jpg" alt="Children's fear">
+		</figure>
+
+		<figure class="item_2">
+			<figcaption>Children's sadness</figcaption>
+			<img class="image" src="img/sadness.jpg" alt="Children's sadness">
+		</figure>
+
+		<figure class="item_3">
+			<figcaption>Children's astonishment</figcaption>
+			<img class="image" src="img/astonishment.jpg" alt="Children's astonishment">
+		</figure>
+
+		<figure class="item_4">
+			<figcaption>Children's happiness</figcaption>
+			<img class="image" src="img/happy.jpg" alt="Children's happiness">
+		</figure>
+	</div>
+
+</body>
+
+</html>
